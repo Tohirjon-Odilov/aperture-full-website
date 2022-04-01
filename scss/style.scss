@@ -104,6 +104,9 @@ button {
 }
 
 @media screen and (max-width: 1300px) {
+    .navbar {
+        height: 60px;
+    }
     .navbar_item:nth-child(1) {
         margin-left: 0px;
     }
@@ -175,9 +178,9 @@ button {
     }
     #mobile-menu {
         position: absolute;
-        top: 20%;
+        top: 15%;
         right: 5%;
-        transform: translate(5%, 20%);
+        transform: translate(5%, 15%);
     }
     .navbar_toggle .bar {
         display: block;
@@ -194,61 +197,83 @@ button {
     }
 }
 
-//  Main container
-// section 1
 .main {
-    min-width: 390px;
     overflow: hidden;
 }
 
+p {
+    color: #C0C0C0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
 .s1-container {
-    margin-top: 90px;
-    .part-1 {
-        max-height: 710px;
-        img {
-            position: absolute;
-            width: 100%;
-        }
-        .box-1 {
-            position: absolute;
-            top: 70%;
-            // left: 50%;
-            // transform: translate(-50%, 70%);
+    margin-top: 60px;
+    .header-text {
+        color: #C0C0C0;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    .box {
+        position: relative;
+        top: -260px;
+    }
+    h1 {
+        font-size: 54px;
+        line-height: 59px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+    p {
+        text-align: center;
+    }
+    .box-1 {
+        margin-top: -240px;
+        margin-left: 75%;
+    }
+}
+
+@media screen and(min-width:1300px) {
+    .s1-img {
+        width: 100%;
+    }
+}
+
+@media screen and(max-width:576px) {
+    .s1-container {
+        margin: auto;
+        .box {
+            margin: -190px 20px 20px;
         }
         .header-text {
-            line-height: 20px;
-            text-align: center;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: #C0C0C0;
+            font-size: 15px;
         }
         h1 {
-            margin-bottom: 18px;
-            text-align: center;
-            color: #fff;
-            font-weight: 400;
-            font-size: 54px;
-            line-height: 59px;
+            font-size: 40px;
         }
         p {
-            text-align: center;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 20px;
-            color: #C0C0C0;
+            font-size: 12px;
         }
-        .box-2 {
-            width: 295px;
-            min-height: 16px;
-            max-width: 100%;
-            position: absolute;
-            top: 100%;
-            left: 100%;
-            transform: translate(-100%, 100%);
-            img {
-                min-width: 295px;
-                min-height: 16px;
-            }
+        .box-1 {
+            margin-left: 0%;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and(max-width:390px) {
+    .s1-container {
+        .header-text {
+            font-size: 15px;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 9px;
         }
     }
 }
